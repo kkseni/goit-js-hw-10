@@ -37,7 +37,8 @@ function showCountries(countries) {
     }
     if ((countries.length >= 2) && (countries.length <= 10)) {
         markup = countriesMarkup(countries);
-        return countryList.insertAdjacentHTML('beforeend', markup)
+        console.log(countries)
+        return countryList.insertAdjacentHTML('beforeend', markup.join(''))
     }
     markup = oneCountryMarkup(countries);
     console.log(countries)
